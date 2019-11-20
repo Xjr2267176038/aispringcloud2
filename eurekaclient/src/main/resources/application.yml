@@ -1,0 +1,14 @@
+server:
+  port: 8011
+#  当前服务注册在Eureka server 上的名称
+spring:
+  application:
+    name: provider
+eureka:
+  client:
+#  当前注册中心的访问地址
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+#  是否将当前服务id注册到Eureka Server
+  instance:
+    prefer-ip-address: true
